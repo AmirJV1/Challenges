@@ -3,7 +3,9 @@ body, html {
   margin: 0;
   text-decoration: none;
 }
-
+attribution{
+  color:black;
+}
 body {
   font-size: 16px;
   background-color: #cfcfcf;
