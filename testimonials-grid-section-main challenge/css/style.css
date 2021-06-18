@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,600;1,500&display=swap");
+body, html {
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  background-color: #cfcfcf;
+  color: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+::-moz-selection {
+  color: black;
+  background-color: violet;
+}
+
+::selection {
+  color: black;
+  background-color: violet;
+}
+
+img {
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 50%;
+  border: 1px rgba(255, 255, 255, 0.541) solid;
+  background-color: rgba(255, 255, 255, 0.548);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.blue-borders {
+  border-color: #7541c8;
+  background-color: #7541c8;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card1, .card2, .card3, .card4, .card5 {
+  padding: 1.5em 3em 3em 3em;
+  border-radius: 12px;
+  margin: 0.5em 1em 2em 0.5em;
+}
+
+.card1 {
+  background-color: #7541c8;
+  z-index: -2;
+  margin-top: 5em;
+}
+
+.nameImageCont {
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.name-verif {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 1.5em;
+}
+
+.name-verif p {
+  margin: 0;
+}
+
+.big-text {
+  font-size: 25px;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.decor {
+  color: rgba(255, 255, 255, 0.349);
+  margin: 0;
+  position: absolute;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 470px;
+  top: -0.02em;
+  right: 0.04em;
+  z-index: -1;
+}
+
+.card2 {
+  background-color: #48556a;
+}
+
+.card3, .card5 {
+  color: #48556a;
+  background-color: #fff;
+}
+
+.card4 {
+  background-color: #19212e;
+}
+
+@media (min-width: 1225px) {
+  .main-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card1 {
+    margin-top: 0.5em;
+    max-width: 500px;
+  }
+  .decor {
+    top: -0.17em;
+    right: 1.3em;
+  }
+  .card2 {
+    max-width: 200px;
+  }
+  .card3 {
+    max-width: 250px;
+  }
+  .card3 .big-text {
+    margin: 1em 0 2em 0;
+  }
+  .card3 .text {
+    width: 250px;
+  }
+  .card4 {
+    max-width: calc(250px + 0.5em + 190px);
+  }
+  .card5 {
+    max-width: 200px;
+    min-height: 710px;
+    position: absolute;
+    right: -1.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
