@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 70vh;
+}
+::selection{
+    background-color: rgba(220, 20, 60, 0.26);
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+    transition: color 1s;
+}
+a:hover{
+    color: rgb(7, 10, 218);
+}
+.main-cont{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgba(88, 120, 156, 0.466) solid;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: coral 10px 4px 2px;
+    background-color: rgba(0, 0, 0, 1);
+}
+h1{
+    font-size: 35px;
+    color: rgba(255, 1, 1, 0.87);
+    text-decoration: 1px rgb(255, 0, 0) double underline;
+}
+h1:hover{
+    color: tomato;
+}
+img{
+    position: absolute;
+    bottom: 100px;
+}
+button{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 7px;
+    background-color: rgb(1, 87, 1);
+    transition: background-color 1s;
+}
+button:hover{
+    background-color: rgb(6, 189, 6);
+}
+.joke{
+    color: cornsilk;
+    margin-top: 30px;
+    text-align: left;
+    padding: 20px;
+}
+footer{
+    position: absolute;
+    bottom: 2em;
+}
+@media (max-width:720px) {
+    h1{
+        margin-top: 20px;
+        font-size: larger;
+    }
+    button{
+        font-size: medium;
+        margin-top: 20px;
+    }
+    .main-cont{
+        width: 350px;
+        height: 200px;
+    }
+    .joke{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100%;
+        flex-grow: 1;
+        height: max-content;
+        margin: 0;
+        font-size: small;
+    }
+}
