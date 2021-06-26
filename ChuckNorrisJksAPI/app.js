@@ -18,12 +18,12 @@ async function getChnJk() {
 }
 
 const showJoke = () => {
-    const timeout = 100;
-    setTimeout(async () => {
+    
+    async () => {
         const joke = await getChnJk();
         jokeDisplay.innerText = joke
         console.log(joke)
-    }, timeout);
+    }
 }
 
 form.addEventListener("submit", (event) => {
