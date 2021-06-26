@@ -17,13 +17,10 @@ async function getChnJk() {
     }
 }
 
-const showJoke = () => {
-    
-    async () => {
+const showJoke = async () => {
         const joke = await getChnJk();
         jokeDisplay.innerText = joke
         console.log(joke)
-    }
 }
 
 form.addEventListener("submit", (event) => {
