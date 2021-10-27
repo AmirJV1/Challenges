@@ -1,0 +1,174 @@
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+// Colors
+$Paleblue: hsl(225, 100%, 94%);
+$Brightblue: hsl(245, 75%, 52%);
+$Verypaleblue: hsl(225, 100%, 98%);
+$Desaturatedblue: hsl(224, 23%, 55%);
+$Darkblue: hsl(223, 47%, 23%);
+
+* {
+	font-family: 'Red Hat Display', sans-serif;
+}
+*::selection {
+	background-color: yellow;
+	color: black;
+}
+html {
+	background-image: url('/public/images/pattern-background-mobile.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+img {
+	user-select: none;
+}
+body {
+	height: 120vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	vertical-align: middle;
+}
+p {
+	color: $Desaturatedblue;
+	font-size: 1em;
+}
+h1 {
+	color: $Darkblue;
+	font-size: 1.7em;
+}
+.orderSumDiv {
+	padding: 10px;
+}
+.orderSumDiv h1 {
+	font-weight: 900;
+}
+.planDiv {
+	border-radius: 10px;
+	background-color: $Verypaleblue;
+	width: 90%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.planDiv p {
+	margin: 1px;
+}
+.planDiv a {
+	font-weight: 600;
+	color: $Brightblue;
+}
+.planDiv a:hover {
+	color:hsl(245, 71%, 59%) ;
+}
+/* Card display */
+.mainDiv {
+	background-color: #fff;
+	justify-content: space-evenly;
+	border-radius: 10px;
+	width: 90vw;
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+}
+.planDiv div,
+.planDiv div div{
+	display: flex;
+}
+.planDiv div div {
+    margin-left: 5px;
+    flex-direction: column;
+}
+.planDiv div :nth-of-type(1) {
+	text-align: left;
+	color: $Darkblue;
+	font-weight: 700;
+}
+.headerImg {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.seccondSection {
+	align-items: center;
+	justify-content: space-evenly;
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+}
+.seccondSection h1,
+p {
+	text-align: center;
+}
+.orderDiv {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: max-content;
+}
+.payBtn {
+	margin: 10px;
+	font-size: 1.2em;
+	width: 80vw;
+	height: 9vh;
+	color: $Paleblue;
+	border: none;
+	border-radius: 15px;
+	background-color: $Brightblue;
+	-webkit-box-shadow: 1px 9px 18px 5px rgba(0, 0, 0, 0.58);
+	box-shadow: 1px 9px 18px 5px rgba(0, 0, 0, 0.58);
+}
+
+.orderDiv .payBtn:hover{
+	background-color:hsl(245, 58%, 64%) ;
+}
+.orderDiv p {
+	font-weight: 900;
+}
+.orderDiv p:hover {
+	color: $Darkblue;
+}
+.seccondSection span {
+	font-weight: 600;
+}
+.seccondSection span:hover {
+	text-decoration: underline;
+	cursor: default;
+}
+.audioText {
+	color: rgb(51, 255, 0);
+}
+.songText {
+	color: rgb(217, 0, 255);
+}
+.podText {
+	color: orange;
+}
+/* footer */
+
+.attribution {
+	font-size: 16px;
+	text-align: center;
+	color: $Darkblue;
+}
+.attribution a {
+	font-weight: 700;
+	color: rgb(89, 0, 255);
+	transition: font-size 1s;
+}
+.attribution a:hover {
+	font-size: 2em;
+}
+@media (min-width: 900px) {
+	html {
+		background-image: url('/public/images/pattern-background-desktop.svg');
+	}
+	.mainDiv {
+		max-width: 500px;
+	}
+    .payBtn{
+        max-width: 35vw;
+    }
+}
