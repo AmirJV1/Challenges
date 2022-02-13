@@ -1,0 +1,163 @@
+p {
+  font-size: 18px;
+}
+
+*::-moz-selection {
+  background-color: #444444;
+  color: #000;
+}
+
+*::selection {
+  background-color: #444444;
+  color: #000;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 120vh;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  color: #9299a0;
+  background-color: #0d192b;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img::-moz-selection {
+  background-color: transparent;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+.card-container {
+  max-width: 80vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #14253d;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 76px 4px rgba(0, 0, 0, 0.75);
+}
+
+.card-container h2 {
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.card-container img {
+  max-width: 80vw;
+  border-radius: 15px;
+}
+
+.card-container p {
+  position: relative;
+  margin: 10px 0 10px 0;
+}
+
+.creator-cont {
+  padding-top: 20px;
+  border-top: 2px solid #2f415b;
+  width: 100%;
+  display: flex;
+}
+
+.creator-cont p span {
+  color: #fff;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.creator-cont div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.creator-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0;
+}
+
+.attribution {
+  position: absolute;
+  bottom: -20vh;
+  text-align: center;
+}
+
+.attribution a {
+  color: #4fffa1;
+}
+
+.cost {
+  color: #00fff7;
+}
+
+.cost:nth-child(1) {
+  align-self: center;
+  justify-self: center;
+}
+
+.attribution a {
+  transition: font-size 200ms;
+}
+
+.attribution a:hover {
+  font-size: 22px;
+}
+
+@media (min-width: 1000px) {
+  html,
+body {
+    min-height: 100vh;
+  }
+
+  .card-container {
+    max-width: 25vw;
+    max-height: 85vh;
+  }
+
+  .creator-cont {
+    margin: 0;
+    padding: 10px 0 0 0;
+  }
+
+  .card-container img {
+    max-width: 25vw;
+  }
+
+  .attribution {
+    top: 10px;
+    bottom: 100vh;
+  }
+}/*# sourceMappingURL=styles.css.map */
