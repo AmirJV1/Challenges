@@ -86,6 +86,14 @@ img::selection {
   color: #fff;
 }
 
+.creator-cont p span::-moz-selection {
+  color: #d0ff00;
+}
+
+.creator-cont p span::selection {
+  color: #d0ff00;
+}
+
 .card-info {
   display: flex;
   justify-content: space-between;

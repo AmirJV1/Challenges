@@ -73,6 +73,9 @@ img::selection {
 .creator-cont p span {
 	color: #fff;
 }
+.creator-cont p span::selection {
+	color: rgb(208, 255, 0);
+}
 .card-info {
 	display: flex;
 	justify-content: space-between;
